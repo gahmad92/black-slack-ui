@@ -7,6 +7,8 @@ import SignalSection from "./sections/SignalSection.jsx";
 import AiSection from "./sections/AiSection.jsx";
 import KnowledgeSection from "./sections/KnowledgeSection.jsx";
 import PeopleSection from "./sections/PeopleSection.jsx";
+import ProcessSection from "./sections/ProcessSection.jsx";
+import PlatformSection from "./sections/PlatformSection.jsx";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <SectionNav />
           <KnowledgeSection />
           <PeopleSection />
+          <ProcessSection />
+          <PlatformSection />
         </main>
       </div>
     </div>
