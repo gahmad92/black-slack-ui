@@ -11,7 +11,7 @@ function SectionNav() {
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="royal-title rounded-full px-5 py-2 font-semibold text-[#5a0d7a] transition hover:bg-[#72009C] hover:text-white"
+              className="royal-title rounded-full bg-[#72009C]/10 px-5 py-2 font-semibold text-[#5a0d7a] transition hover:bg-[#72009C] hover:text-white"
             >
               {item}
             </a>

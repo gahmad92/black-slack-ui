@@ -10,6 +10,8 @@ import PeopleSection from "./sections/PeopleSection.jsx";
 import ProcessSection from "./sections/ProcessSection.jsx";
 import PlatformSection from "./sections/PlatformSection.jsx";
 import StatsSection from "./sections/StatsSection.jsx";
+import CtaSection from "./sections/CtaSection.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -32,7 +34,9 @@ function App() {
           <ProcessSection />
           <PlatformSection />
           <StatsSection />
+          <CtaSection />
         </main>
+        <Footer />
       </div>
     </div>
   );
