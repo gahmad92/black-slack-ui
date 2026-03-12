@@ -4,6 +4,8 @@ import Hero from "./sections/Hero.jsx";
 import ActionPanel from "./sections/ActionPanel.jsx";
 import SignalSection from "./sections/SignalSection.jsx";
 import AiSection from "./sections/AiSection.jsx";
+import KnowledgeSection from "./sections/KnowledgeSection.jsx";
+import PeopleSection from "./sections/PeopleSection.jsx";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <ActionPanel />
           <SignalSection />
           <AiSection />
+          <KnowledgeSection />
+          <PeopleSection />
         </main>
       </div>
     </div>
