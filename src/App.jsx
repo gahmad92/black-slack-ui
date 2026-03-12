@@ -9,6 +9,7 @@ import KnowledgeSection from "./sections/KnowledgeSection.jsx";
 import PeopleSection from "./sections/PeopleSection.jsx";
 import ProcessSection from "./sections/ProcessSection.jsx";
 import PlatformSection from "./sections/PlatformSection.jsx";
+import StatsSection from "./sections/StatsSection.jsx";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <PeopleSection />
           <ProcessSection />
           <PlatformSection />
+          <StatsSection />
         </main>
       </div>
     </div>

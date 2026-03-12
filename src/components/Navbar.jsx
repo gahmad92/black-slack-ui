@@ -2,10 +2,10 @@ import React from "react";
 
 function Navbar() {
   return (
-    <header className="relative z-10">
-      <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
+    <header className="sticky top-0 z-50 bg-white/85 backdrop-blur">
+      <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
         <div className="flex items-center gap-2 text-xl font-semibold text-[#4A154B]">
-          <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#4A154B]/10">
+          <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#4A154B]/10 shadow-[inset_-3px_-3px_6px_rgba(255,255,255,0.9),_3px_3px_8px_rgba(74,21,75,0.2)]">
             B
           </span>
           Black
@@ -31,7 +31,7 @@ function Navbar() {
 
         <div className="flex items-center gap-3 text-sm font-medium">
           <button
-            className="hidden h-10 w-10 items-center justify-center rounded-full border border-[#4A154B]/20 text-[#4A154B] hover:border-[#4A154B] lg:inline-flex"
+            className="hidden h-10 w-10 items-center justify-center rounded-full border border-[#4A154B]/20 text-[#4A154B] shadow-[inset_-3px_-3px_6px_rgba(255,255,255,0.9),_3px_3px_8px_rgba(74,21,75,0.2)] hover:border-[#4A154B] lg:inline-flex"
             aria-label="Search"
           >
             <svg
@@ -48,10 +48,10 @@ function Navbar() {
           <button className="hidden text-[#2c1830] hover:text-[#4A154B] lg:inline-flex">
             Sign in
           </button>
-          <button className="rounded-full border border-[#4A154B] px-4 py-2 text-[#4A154B] transition hover:bg-[#4A154B]/10">
+          <button className="rounded-full border border-[#4A154B] px-4 py-2 text-[#4A154B] shadow-[inset_-3px_-3px_6px_rgba(255,255,255,0.9),_3px_3px_8px_rgba(74,21,75,0.2)] transition hover:bg-[#4A154B]/10">
             Request a demo
           </button>
-          <button className="rounded-full bg-[#4A154B] px-4 py-2 text-white shadow-lg shadow-[#4A154B]/20 transition hover:brightness-110">
+          <button className="rounded-full bg-[#4A154B] px-4 py-2 text-white shadow-[inset_-3px_-3px_6px_rgba(255,255,255,0.15),_6px_6px_14px_rgba(74,21,75,0.3)] transition hover:brightness-110">
             Get started
           </button>
         </div>
