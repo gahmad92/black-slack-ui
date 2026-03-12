@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", "IBM Plex Sans", "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  color: #1e1020;
+}
+
+.royal-title {
+  font-family: "Playfair Display", "Space Grotesk", serif;
+  letter-spacing: 0.01em;
+}
+
+.starfield {
+  background-image:
+    radial-gradient(circle at 12% 22%, rgba(255, 255, 255, 0.55) 1px, transparent 1.6px),
+    radial-gradient(circle at 42% 18%, rgba(255, 255, 255, 0.4) 1px, transparent 1.6px),
+    radial-gradient(circle at 78% 28%, rgba(255, 255, 255, 0.35) 1px, transparent 1.6px),
+    radial-gradient(circle at 18% 62%, rgba(255, 255, 255, 0.45) 1px, transparent 1.6px),
+    radial-gradient(circle at 62% 72%, rgba(255, 255, 255, 0.35) 1px, transparent 1.6px),
+    radial-gradient(circle at 88% 64%, rgba(255, 255, 255, 0.5) 1px, transparent 1.6px);
+  background-size: 220px 220px;
+  animation: star-drift 16s linear infinite;
+}
+
+@keyframes star-drift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 220px 120px;
+  }
+}
+
+.orb {
+  background: radial-gradient(circle at 30% 30%, rgba(74, 21, 75, 0.3), rgba(74, 21, 75, 0));
+  filter: blur(2px);
+  animation: drift 12s ease-in-out infinite;
+}
+
+.orb--slow {
+  animation-duration: 16s;
+}
+
+.orb--fast {
+  animation-duration: 10s;
+}
+
+.pulse-ring {
+  background: radial-gradient(circle, rgba(74, 21, 75, 0.18), rgba(74, 21, 75, 0));
+  animation: pulse 6s ease-in-out infinite;
+}
+
+@keyframes drift {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(0.96);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+}
