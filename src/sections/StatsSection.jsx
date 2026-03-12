@@ -70,7 +70,19 @@ function StatsSection() {
   }, []);
 
   return (
-    <section ref={ref} className="w-full bg-[#481A54] py-20">
+    <section ref={ref} className="relative w-full bg-[#481A54] py-20">
+      <div className="absolute left-0 top-0 w-full">
+        <svg
+          viewBox="0 0 1440 120"
+          className="block h-20 w-full"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,80 C360,0 720,120 1080,72 C1260,48 1380,24 1440,40 L1440,0 L0,0 Z"
+            fill="#FFFFFF"
+          />
+        </svg>
+      </div>
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-10 px-6 text-center">
         <h2 className="text-3xl font-semibold text-white md:text-4xl lg:text-5xl">
           We&apos;re in the business of growing businesses.
