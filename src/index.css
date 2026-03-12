@@ -12,6 +12,13 @@ body {
   color: #1e1020;
 }
 
+#knowledge,
+#people,
+#process,
+#platform {
+  scroll-margin-top: 150px;
+}
+
 .royal-title {
   font-family: "Playfair Display", "Space Grotesk", serif;
   letter-spacing: 0.01em;
