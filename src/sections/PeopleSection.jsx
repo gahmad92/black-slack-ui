@@ -10,10 +10,14 @@ function PeopleSection() {
   const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 20 });
 
   return (
-    <section ref={sectionRef} className="relative w-full bg-white py-20">
+    <section
+      ref={sectionRef}
+      id="people"
+      className="relative w-full bg-white py-20"
+    >
       <div className="mx-auto w-full max-w-6xl px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-semibold text-[#1c0f1f] md:text-4xl lg:text-5xl">
+          <h2 className="text-4xl font-semibold text-[#1c0f1f] md:text-5xl lg:text-6xl">
             <span className="bg-gradient-to-r from-[#4A154B] via-[#72009C] to-[#4A154B] bg-clip-text text-transparent">
               Let your people connect like people.
             </span>
@@ -22,9 +26,7 @@ function PeopleSection() {
 
         <div className="relative mt-12 grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-start">
           <div className="space-y-6">
-            <p className="text-base text-[#3c243f] md:text-lg">
-              Can focus on growth instead of guesswork.
-            </p>
+            
             <h3 className="text-2xl font-semibold text-[#1c0f1f]">
               Anyone can automate in Black.
             </h3>

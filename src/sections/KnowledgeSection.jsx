@@ -1,8 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 
-const quickLinks = ["Knowledge", "People", "Process", "Platform"];
-
 function KnowledgeSection() {
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -12,22 +10,15 @@ function KnowledgeSection() {
   const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 20 });
 
   return (
-    <section ref={sectionRef} className="relative w-full bg-white py-20">
+    <section
+      ref={sectionRef}
+      id="knowledge"
+      className="relative w-full bg-white py-20"
+    >
       <div className="mx-auto w-full max-w-6xl px-6">
-        <div className="flex flex-wrap items-center justify-center gap-3 rounded-full border border-[#72009C]/40 bg-white px-4 py-2 text-lg text-[#5a0d7a] shadow-sm shadow-[#72009C]/15">
-          {quickLinks.map((item) => (
-            <button
-              key={item}
-              className="royal-title rounded-full px-5 py-2 font-semibold text-[#5a0d7a] transition hover:bg-[#72009C] hover:text-white"
-            >
-              {item}
-            </button>
-          ))}
-        </div>
-
         <div className="relative mt-12 grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-start">
           <div className="space-y-6">
-            <h2 className="text-3xl font-semibold text-[#1c0f1f] md:text-4xl">
+            <h2 className="text-4xl font-semibold text-[#1c0f1f] md:text-5xl lg:text-6xl">
               <span className="bg-gradient-to-r from-[#4A154B] via-[#72009C] to-[#4A154B] bg-clip-text text-transparent">
                 Give everyone instant context.
               </span>
