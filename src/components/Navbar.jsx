@@ -4,14 +4,14 @@ function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white/85 backdrop-blur">
       <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
-        <div className="flex items-center gap-2 text-xl font-semibold text-[#4A154B]">
+        <div className="flex items-center gap-2 text-2xl font-bold text-[#4A154B]">
           <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#4A154B]/10 shadow-[inset_-3px_-3px_6px_rgba(255,255,255,0.9),_3px_3px_8px_rgba(74,21,75,0.2)]">
             B
           </span>
           Black
         </div>
 
-        <div className="hidden items-center gap-8 text-sm font-medium text-[#2c1830] lg:flex">
+        <div className="hidden items-center gap-8 text-base font-semibold text-[#2c1830] lg:flex">
           <button className="flex items-center gap-1 hover:text-[#4A154B]">
             Features
             <svg
@@ -29,7 +29,7 @@ function Navbar() {
           <button className="hover:text-[#4A154B]">Pricing</button>
         </div>
 
-        <div className="flex items-center gap-3 text-sm font-medium">
+        <div className="flex items-center gap-3 text-base font-semibold">
           <button
             className="hidden h-10 w-10 items-center justify-center rounded-full border border-[#4A154B]/20 text-[#4A154B] shadow-[inset_-3px_-3px_6px_rgba(255,255,255,0.9),_3px_3px_8px_rgba(74,21,75,0.2)] hover:border-[#4A154B] lg:inline-flex"
             aria-label="Search"
